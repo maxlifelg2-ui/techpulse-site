@@ -20,18 +20,7 @@ export default function ClubPage() {
       </p>
       <p className="text-sm text-ink-faint mb-10">בחינם. בלי ספאם. ביטול בלחיצה אחת.</p>
 
-      <div className="grid grid-cols-3 gap-4 mb-12">
-        {[
-          { v: "0", l: "חברי מועדון" },
-          { v: "0", l: "דילים בלעדיים" },
-          { v: "0%", l: "ספאם" },
-        ].map(({ v, l }) => (
-          <div key={l} className="bg-paper-raised border border-rule rounded-xl py-5">
-            <div className="text-3xl font-extrabold font-display text-signal">{v}</div>
-            <div className="text-xs text-ink-faint mt-1">{l}</div>
-          </div>
-        ))}
-      </div>
+
 
       <div className="bg-paper-raised border border-rule rounded-2xl p-8 mb-8 text-right">
         <h2 className="font-display text-xl font-bold text-ink mb-6">הצטרף למועדון</h2>
