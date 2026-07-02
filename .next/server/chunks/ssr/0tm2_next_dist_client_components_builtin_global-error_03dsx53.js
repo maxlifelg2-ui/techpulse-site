@@ -1,0 +1,3 @@
+module.exports=[1320,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(15319);a.n(d("[project]/Desktop/techpulse-site/node_modules/next/dist/client/components/builtin/global-error.js <module evaluation>"))},85464,(a,b,c)=>{let{createClientModuleProxy:d}=a.r(15319);a.n(d("[project]/Desktop/techpulse-site/node_modules/next/dist/client/components/builtin/global-error.js"))},69355,a=>{"use strict";a.i(1320);var b=a.i(85464);a.n(b)},88221,a=>{a.n(a.i(69355))}];
+
+//# sourceMappingURL=0tm2_next_dist_client_components_builtin_global-error_03dsx53.js.map
