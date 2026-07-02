@@ -10,13 +10,13 @@ export default function ClubPage() {
   return (
     <div className="mx-auto max-w-2xl px-5 py-16 text-center">
       <span className="inline-block bg-signal-soft text-signal text-xs font-bold px-3 py-1 rounded-full mb-6 tracking-wide uppercase">
-        Club TMaxTech
+        Club TechPulse
       </span>
       <h1 className="font-display text-4xl font-extrabold text-ink leading-tight mb-4">
         דילים שלא תמצא בשום מקום אחר
       </h1>
       <p className="text-lg text-ink-soft leading-relaxed mb-3 max-w-xl mx-auto">
-        לא אפיליאייט. לא קופון. דיל אמיתי שנוהל ישירות מול היבואן — רק לחברי Club TMaxTech.
+        לא אפיליאייט. לא קופון. דיל אמיתי שנוהל ישירות מול היבואן — רק לחברי Club TechPulse.
       </p>
       <p className="text-sm text-ink-faint mb-10">בחינם. בלי ספאם. ביטול בלחיצה אחת.</p>
 
