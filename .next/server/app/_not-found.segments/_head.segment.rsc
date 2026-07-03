@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[11041,["/_next/static/chunks/325mzu0fvc92c.js","/_next/static/chunks/3cdeil0hlat5f.js"],"ViewportBoundary"]
-3:I[11041,["/_next/static/chunks/325mzu0fvc92c.js","/_next/static/chunks/3cdeil0hlat5f.js"],"MetadataBoundary"]
-4:"$Sreact.suspense"
-5:I[15710,["/_next/static/chunks/325mzu0fvc92c.js","/_next/static/chunks/3cdeil0hlat5f.js"],"IconMark"]
-0:{"rsc":["$","$1","h",{"children":[["$","meta",null,{"name":"robots","content":"noindex"}],["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"TechPulse — חדשות וביקורות טכנולוגיה"}],["$","meta","1",{"name":"description","content":"כל מה שצריך לדעת על טלוויזיות, סאונדבארים, שואבי אבק ומוצרי חשמל — השוואות, מחירים ומדריכי קנייה בעברית."}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L5","3",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qOjQl28isKTC3GMg8PAhZ"}
