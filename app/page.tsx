@@ -87,7 +87,7 @@ export default function HomePage() {
             <Link href={`/article/${featured.slug}`} className="group block rounded-2xl overflow-hidden border border-rule hover:border-signal/30 transition-colors bg-paper-raised">
               <div className={`w-full aspect-[16/9] relative overflow-hidden rounded-t-2xl ${!featured.imageUrl ? `bg-gradient-to-br ${featuredGrad}` : ""}`}>
                 {featured.imageUrl ? (
-                  <img src={featured.imageUrl} alt={featured.headline} className="w-full h-full object-cover" loading="eager" />
+                  <img src={featured.imageUrl ?? ""} alt={featured.headline} className="w-full h-full object-cover" loading="eager" />
                 ) : (
                   <span className="absolute inset-0 flex items-center justify-center text-white/15 font-black tracking-widest uppercase text-2xl">{featuredLabel}</span>
                 )}

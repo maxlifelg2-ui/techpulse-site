@@ -34,5 +34,6 @@ export interface Article {
   bodyHtml: string; // rendered article HTML, self-contained
   heroLabel: string; // short spec-style label e.g. "OLED · 55 אינץ' · ₪8,990"
   readMinutes: number;
+  imageUrl?: string;
   featured?: boolean;
 }
