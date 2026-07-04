@@ -85,9 +85,13 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] gap-6 mb-10 pb-10 border-b border-rule">
             {/* Hero Card — Large */}
             <Link href={`/article/${featured.slug}`} className="group block rounded-2xl overflow-hidden border border-rule hover:border-signal/30 transition-colors bg-paper-raised">
-              <div className={`w-full aspect-[16/9] bg-gradient-to-br ${featuredGrad} flex flex-col items-center justify-center gap-3 relative`}>
-                <span className="text-white/15 font-black tracking-widest uppercase" style={{fontSize:"28px"}}>{featuredLabel}</span>
-                <span className="absolute top-3 right-3 bg-signal text-white text-xs font-bold px-2.5 py-1 rounded-full">
+              <div className={`w-full aspect-[16/9] relative overflow-hidden rounded-t-2xl ${!featured.imageUrl ? `bg-gradient-to-br ${featuredGrad}` : ""}`}>
+                {featured.imageUrl ? (
+                  <img src={featured.imageUrl} alt={featured.headline} className="w-full h-full object-cover" loading="eager" />
+                ) : (
+                  <span className="absolute inset-0 flex items-center justify-center text-white/15 font-black tracking-widest uppercase text-2xl">{featuredLabel}</span>
+                )}
+                <span className="absolute top-3 right-3 bg-signal text-white text-xs font-bold px-2.5 py-1 rounded-full z-10">
                   כתבה ראשית
                 </span>
               </div>
