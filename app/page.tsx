@@ -120,10 +120,14 @@ export default function HomePage() {
                 {rest.slice(0, 5).map((article) => (
                   <Link key={article.slug} href={`/article/${article.slug}`}
                     className="group flex gap-3 py-3 border-b border-rule hover:bg-paper-raised -mx-2 px-2 rounded-lg transition-colors">
-                    <div className={`w-12 h-12 rounded-lg bg-gradient-to-br ${GRADIENTS[article.category] ?? "from-zinc-900 to-zinc-700"} flex items-center justify-center flex-shrink-0`}>
-                      <span className="text-white/40 font-bold" style={{fontSize:"8px"}}>
-                        {(CATEGORY_LABELS[article.category as Category] ?? "TK").slice(0,3).toUpperCase()}
-                      </span>
+                    <div className={`w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 ${!article.imageUrl ? `bg-gradient-to-br ${GRADIENTS[article.category] ?? "from-zinc-900 to-zinc-700"}` : ""}`}>
+                      {article.imageUrl ? (
+                        <img src={article.imageUrl} alt={article.headline} className="w-full h-full object-cover" loading="lazy" />
+                      ) : (
+                        <span className="w-full h-full flex items-center justify-center text-white/40 font-bold" style={{fontSize:"8px"}}>
+                          {(CATEGORY_LABELS[article.category as Category] ?? "TK").slice(0,3).toUpperCase()}
+                        </span>
+                      )}
                     </div>
                     <div className="flex-1 min-w-0">
                       <span className="text-signal" style={{fontSize:"9px", fontWeight:700, letterSpacing:"0.08em", textTransform:"uppercase"}}>
