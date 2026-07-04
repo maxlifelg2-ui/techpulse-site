@@ -120,7 +120,7 @@ export default function HomePage() {
                 {rest.slice(0, 5).map((article) => (
                   <Link key={article.slug} href={`/article/${article.slug}`}
                     className="group flex gap-3 py-3 border-b border-rule hover:bg-paper-raised -mx-2 px-2 rounded-lg transition-colors">
-                    <div className={`w-12 h-12 rounded-lg overflow-hidden flex-shrink-0 ${!article.imageUrl ? `bg-gradient-to-br ${GRADIENTS[article.category] ?? "from-zinc-900 to-zinc-700"}` : ""}`}>
+                    <div className={`w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-paper-raised ${!article.imageUrl ? `bg-gradient-to-br ${GRADIENTS[article.category] ?? "from-zinc-900 to-zinc-700"}` : ""}`}>
                       {article.imageUrl ? (
                         <img src={article.imageUrl} alt={article.headline} className="w-full h-full object-cover" loading="lazy" />
                       ) : (
